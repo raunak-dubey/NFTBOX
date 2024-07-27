@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Actor", sans-serif;
+    color: var(--heading);
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --bg: #151515;
+    --heading: #fff;
+    --para: #bab9b9;
+    --orange: #E63F2A;
+}
+/* // ==================================== Utils =============================== // */
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-5%, -50%);
+    height: 150px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    filter: blur(200px);
+}
+.btn{
+    cursor: pointer;
+    padding: .8vw 2.5vw;
+    border: 1px solid var(--orange);
+    font-size: 1vw;
+    font-weight: 300;
+    background-color: transparent;
+    text-transform: uppercase;
+}   
+.btn:hover{
+    background-color: var(--orange);
+}
+/* // ================================= homeSection ============================ // */
+#homeSection{
+    background: var(--bg);
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#header{
+    width: 100%;
+    padding: 2vw 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav{
+    display: flex;
+    gap: 2vw;
+}
+#nav h3{
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: var(--para);
+}
+#logo h1{
+    color: var(--orange);
+    font-size: 1.6vw;
+}
+.circle2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(20%, 20%);
+    height: 400px;
+    width: 600px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    filter: blur(500px);
+}
+
+#homeContent{
+    display: flex;
+    align-items: center;
+}
+.left{
+    /* background-color: blanchedalmond; */
+    width: 50%;
+    padding: 0vw 6vw;
+}
+.left h1{
+    text-transform: uppercase;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+}
+.left p{
+    font-size: 1vw;
+    margin-bottom: 1vw;
+    color: var(--para);
+}
+.left #achievement{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vw;
+    gap: 2vw;
+    width: 80%;
+    /* background-color: cadetblue; */
+}
+#achievement p{
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+    color: var(--heading);
+    /* background-color: crimson; */
+    width: 35%;
+    /* text-align: center; */
+}
+#achievement p span{
+    color: var(--para);
+}
+.btn2{
+    cursor: pointer;
+    padding: .8vw 2.5vw;
+    border: 1px solid var(--orange);
+    font-size: 1vw;
+    font-weight: 300;
+    background-color: var(--orange);
+    margin-right: 1vw;
+    text-transform: uppercase;
+}   
+.btn2:hover{
+    background-color: transparent;
+}
+.right{
+    /* background-color: rgb(137, 78, 4); */
+    height: 40vw;
+    width: 50%;
+}
+.right #robot{
+    position: absolute;
+    height: 40vw;
+    right: 0;
+    bottom: 0;
+    transform: translate(20%, 0%);
+    z-index: 2;
+}
+.right #robotBg{
+    position: absolute;
+    height: 40vw;
+    right: 0;
+    bottom: 0;
+    transform: translate(0%, 0%);
+}
